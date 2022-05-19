@@ -1,0 +1,75 @@
+.card {
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    background: white;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 30px;
+    box-shadow: 4px 4px 8px 0px rgba(51, 51, 51, 0.2);
+    
+    @media (min-width: 768px) {
+        gap: 30px;
+        margin-right: 40px;
+        padding: 0 30px;
+    }
+    
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+        width: 228px;
+        @media (min-width: 768px) {
+            padding: 25px 0;
+            width: 300px;
+            gap: 25px;
+        }
+    }
+    
+    &__title {
+        font-size: 18px;
+        @media (min-width: 768px) {
+            font-size: 22px;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 10px;
+    }
+
+    &__item {
+        font-size: 13px;
+        color: #4B5D68;
+        @media (min-width: 768px) {
+            font-size: 15px;
+        }
+    }
+
+    &__image {
+        width: 191px;
+        position: relative;
+         box-shadow: 4px -3px 13px 1px rgba(0, 0, 0, 0.16);
+         justify-content: flex-end;
+        @media (min-width: 768px) {
+            width: 214px;
+        }
+        
+        img {
+            position: absolute;
+            height: calc(100% + 20px);
+            bottom: 0;
+            border: 3px solid white;
+            border-bottom: none;
+            box-sizing: content-box;
+           
+        }
+    }
+    
+}
+

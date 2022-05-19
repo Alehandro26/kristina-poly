@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.fullscreen .css-yrspe {
+  z-index: 11;
+}
+
+.react-images__positioner .css-1ycyyax {
+z-index: 11;
+}
+
+.fullscreen .css-1rbq2qy {
+z-index: 11;
+}
+

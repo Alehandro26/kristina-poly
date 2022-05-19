@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #212353;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    color: #4B5D68;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+a {
+    color: #212353;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
