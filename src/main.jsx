@@ -20,28 +20,6 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-const popup = document.querySelector("#popup");
-const button = document.querySelector("#button");
-const body = document.body;
-
-button.addEventListener("click", buttonBurger);
-[...popup.querySelectorAll("a")].forEach((element) => {
-  element.addEventListener("click", buttonBurgerExit);
-});
-
-function buttonBurger(e) {
-  e.preventDefault();
-  button.classList.toggle("open");
-  popup.classList.toggle("popup");
-  body.classList.toggle("scroll");
-}
-
-function buttonBurgerExit() {
-  button.classList.remove("open");
-  popup.classList.remove("popup");
-  body.classList.remove("scroll");
-}
-
 const onScrollHeader = () => {
   // объявляем основную функцию onScrollHeader
 
