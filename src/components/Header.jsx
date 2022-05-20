@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Header.scss";
 
@@ -22,7 +22,12 @@ function Header() {
     <header className="header">
       <div className="header__wrapper">
         <div className="header__flex">
-          <Link className="header__logo" to="/#top" smooth={true}>
+          <Link
+            className="header__logo"
+            to="/#top"
+            smooth={true}
+            onClick={buttonBurgerExit}
+          >
             <img src="/img/logo.svg" alt="" />
           </Link>
           <div
@@ -51,7 +56,12 @@ function Header() {
           </nav>
         </div>
       </div>
-      <nav className="header__menu" ref={popupRef} id="popup">
+      <nav
+        className="header__menu"
+        ref={popupRef}
+        id="popup"
+        onClick={buttonBurgerExit}
+      >
         <ul className="header__menu_list">
           <li className="header__menu_item">
             <Link
@@ -59,7 +69,6 @@ function Header() {
               smooth={true}
               className="header__menu_link"
               id="header__menu_link"
-              onClick={buttonBurgerExit}
             >
               Обо мне
             </Link>
