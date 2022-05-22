@@ -3,18 +3,21 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Value from "./pages/Value";
+import { AnimatePresence } from "framer-motion";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
-          <Route path="price" element={<Value />} />
-        </Route>
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes key={location.pathname} location={location}>
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="price" element={<Value />} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

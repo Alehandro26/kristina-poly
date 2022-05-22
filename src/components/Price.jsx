@@ -3,7 +3,7 @@ import "./Price.scss";
 function Price({ title, subtitle, value, img, format }) {
   AOS.init({
     duration: 800,
-    offset: 100,
+    offset: 50,
     once: false,
   });
 

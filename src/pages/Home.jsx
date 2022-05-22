@@ -1,3 +1,4 @@
+import AnimatedPage from "../AnimatedPage";
 import Cards from "../components/Cards";
 import Gallery from "../components/Gallery";
 import Main from "../components/Main";
@@ -7,17 +8,19 @@ import Slides from "../components/Slides";
 function Home() {
   AOS.init({
     duration: 800,
-    offset: 100,
+    offset: 50,
     once: false,
   });
   return (
-    <>
-      <Slides></Slides>
-      <Main></Main>
-      <Cards></Cards>
-      <Gallery></Gallery>
-      <Rewievs></Rewievs>
-    </>
+    <AnimatedPage>
+      <>
+        <Slides></Slides>
+        <Main></Main>
+        <Cards></Cards>
+        <Gallery></Gallery>
+        <Rewievs></Rewievs>
+      </>
+    </AnimatedPage>
   );
 }
 
