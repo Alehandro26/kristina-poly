@@ -8,6 +8,8 @@ function Slides() {
     dots: true,
     autoplay: true,
     autoplaySpeed: 2400,
+    swipe: false,
+    touchMove: false,
   };
 
   return (
