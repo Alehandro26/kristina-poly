@@ -16,7 +16,7 @@ function Main() {
       <div className="main__wrapper">
         <div className="main__text">
           <h2 className="main__text_title">
-            Кристина Поли <br /> <span>Москва / Ставрополь</span>
+            Кристина Поли <br /> <span>Москва</span>
           </h2>
           <div className="main__text_wrapper">
             <p className="main__text_subtitle">
@@ -33,14 +33,28 @@ function Main() {
             </div>
           </div>
           <div className="main__about-desk">
-            <p>
-              Модный фэшн-инфлюенсер, тренд-сеттер, персональный стилист
-              имиджмейкер, преобразившая более 2000 счастливых клиентов,
-              создатель подкаста «Скорая модная помощь», народный стилист
-              программы «Модный приговор» на федеральном телевидении,
-              радиоведущая на радио серебряный дождь, публиковалась в журналах
-              Marie Claire, Собака, Whatever magazine (Paris).
-            </p>
+            <ul className="main__list-desk">
+              <li className="main__list-desk_item">Модный фэшн-инфлюенсер;</li>
+              <li className="main__list-desk_item">Тренд-сеттер;</li>
+              <li className="main__list-desk_item">
+                Персональный стилист имиджмейкер, преобразившая более 2000
+                счастливых клиентов;
+              </li>
+              <li className="main__list-desk_item">
+                Создатель подкаста «Скорая модная помощь»;
+              </li>
+              <li className="main__list-desk_item">
+                Народный стилист программы «Модный приговор» на федеральном
+                телевидении;
+              </li>
+              <li className="main__list-desk_item">
+                Радиоведущая на радио серебряный дождь;
+              </li>
+              <li className="main__list-desk_item">
+                Публиковалась в журналах Marie Claire, Собака, Whatever magazine
+                (Paris).
+              </li>
+            </ul>
           </div>
         </div>
         <div className="main__image">
@@ -48,14 +62,28 @@ function Main() {
         </div>
       </div>
       <div className="main__about" ref={mainText} id="main__about">
-        <p>
-          Модный фэшн-инфлюенсер, тренд-сеттер, персональный стилист
-          имиджмейкер, преобразившая более 2000 счастливых клиентов, создатель
-          подкаста «Скорая модная помощь», народный стилист программы «Модный
-          приговор» на федеральном телевидении, радиоведущая на радио серебряный
-          дождь, публиковалась в журналах Marie Claire, Собака, Whatever
-          magazine (Paris).
-        </p>
+        <ul className="main__list">
+          <li className="main__list_item">Модный фэшн-инфлюенсер;</li>
+          <li className="main__list_item">Тренд-сеттер;</li>
+          <li className="main__list_item">
+            Персональный стилист имиджмейкер, преобразившая более 2000
+            счастливых клиентов;
+          </li>
+          <li className="main__list_item">
+            Создатель подкаста «Скорая модная помощь»;
+          </li>
+          <li className="main__list_item">
+            Народный стилист программы «Модный приговор» на федеральном
+            телевидении;
+          </li>
+          <li className="main__list_item">
+            Радиоведущая на радио серебряный дождь;
+          </li>
+          <li className="main__list_item">
+            Публиковалась в журналах Marie Claire, Собака, Whatever magazine
+            (Paris).
+          </li>
+        </ul>
       </div>
     </section>
   );
