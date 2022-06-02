@@ -1,6 +1,4 @@
-a {
-    text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
 
 .container {
     padding: 0 10px;
@@ -30,11 +28,17 @@ p {
     color: #4B5D68;
     font-size: 15px;
     line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
     color: #212353;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {

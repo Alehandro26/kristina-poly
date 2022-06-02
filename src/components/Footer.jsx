@@ -27,7 +27,7 @@ function Footer() {
             </a>
           </nav>
           <div className="footer__adress">
-            <h5>Москва/Ставрополь</h5>
+            <h5>Москва</h5>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ function Footer() {
             </li>
             <li className="footer__item">
               <Link to="price#top" className="footer__link">
-                Стоимость услуг
+                Услуги и стоимость
               </Link>
             </li>
           </ul>

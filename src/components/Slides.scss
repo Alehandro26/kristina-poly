@@ -94,17 +94,7 @@
             padding: 10px 5px;
             max-width: 350px;
             letter-spacing: 2px;
-    }
-
-    &__link:hover,
-    &__link:active {
-        background: rgba(0, 0, 0, 0.616);
-        color: white;      
-    }
-    
-    &__link:active {
-        transform: scale(0.85);
-        transition: 0.25s;
+            transition: .25s;
     }
 }
 

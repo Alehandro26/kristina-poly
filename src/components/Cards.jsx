@@ -2,19 +2,11 @@ import Card from "./Card";
 import "./Cards.scss";
 import Slider from "react-slick";
 import { HashLink as Link } from "react-router-hash-link";
-import { useRef } from "react";
 
 function Cards() {
   const settings = {
     arrows: false,
     variableWidth: true,
-  };
-  const sliderRef = useRef();
-  const prevHandler = () => {
-    sliderRef.current.slickPrev();
-  };
-  const nextHandler = () => {
-    sliderRef.current.slickNext();
   };
 
   return (
@@ -24,7 +16,7 @@ function Cards() {
       </div>
 
       <div className="cards__wrapper">
-        <Slider {...settings} ref={sliderRef}>
+        <Slider {...settings}>
           <Card
             title="Встреча-знакомство"
             item="Online/Offline"
@@ -93,21 +85,9 @@ function Cards() {
         </Slider>
       </div>
       <div className="cards__link-wrapper">
-        <img
-          src="/img/arrow.svg"
-          alt=""
-          className="cards__arrow prev"
-          onClick={prevHandler}
-        />
         <Link to="price#value" className="cards__link" data-aos="zoom-in">
           Подробности
         </Link>
-        <img
-          src="/img/arrow.svg"
-          alt=""
-          className="cards__arrow next"
-          onClick={nextHandler}
-        />
       </div>
     </section>
   );
