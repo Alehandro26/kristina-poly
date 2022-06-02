@@ -193,6 +193,8 @@
     hr {
         display: none; 
         @media (min-width: 1024px) {
+            position: relative;
+            z-index: 2;
             display: block;
             margin-left: 200px;
             margin-right: 20px;
