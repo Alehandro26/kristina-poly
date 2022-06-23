@@ -11,6 +11,11 @@ function App() {
       <Header></Header>
       <main>
         <Outlet></Outlet>
+        <aside className="call">
+          <a className="call__link" href="tel:+79282300555">
+            Звонок
+          </a>
+        </aside>
       </main>
       <Footer></Footer>
     </>

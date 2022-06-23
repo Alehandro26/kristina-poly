@@ -56,6 +56,25 @@ a {
     }
 }
 
+.call {
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #D50065;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call__link {
+    color: white;
+    font-size: 12px;
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0;

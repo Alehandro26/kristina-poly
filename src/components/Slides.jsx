@@ -16,10 +16,39 @@ function Slides() {
     <div className="slides" id="slides">
       <div className="slides__wrapper">
         <div className="slides__image">
-          <Slider {...settings}>
-            <img src="/img/image.jpeg" alt="" className="slides__foto" />
-            <img src="/img/image2.jpeg" alt="" className="slides__foto" />
-            <img src="/img/image3.jpeg" alt="" className="slides__foto" />
+          <Slider className="slides__mobile" {...settings}>
+            <img
+              src="/img/image.jpeg"
+              alt="Слайд №1"
+              className="slides__foto"
+            />
+            <img
+              src="/img/image2.jpeg"
+              alt="Слайд №2"
+              className="slides__foto"
+            />
+            <img
+              src="/img/image3.jpeg"
+              alt="Слайд №3"
+              className="slides__foto"
+            />
+          </Slider>
+          <Slider className="slides__desktop" {...settings}>
+            <img
+              src="/img/slide-des.jpg"
+              alt="Слайд №1"
+              className="slides__foto"
+            />
+            <img
+              src="/img/slide-des2.jpg"
+              alt="Слайд №2"
+              className="slides__foto"
+            />
+            <img
+              src="/img/slide-des3.jpg"
+              alt="Слайд №2"
+              className="slides__foto"
+            />
           </Slider>
         </div>
         <div className="slides__button">
