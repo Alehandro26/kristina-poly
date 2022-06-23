@@ -56,7 +56,7 @@ function Footer() {
           </ul>
         </nav>
       </div>
-      <a href="" className="footer__created">
+      <a href="uvarov-developer.ru" target="_blank" className="footer__created">
         <h5>
           Web site created by <br />
           <span>Alexander Uvarov</span>
