@@ -20,10 +20,10 @@ function Footer() {
               <img src="/img/whatsup.svg" alt="" />
             </a>
             <a
-              href="https://t.me/@Kristinapoly"
+              href="https://t.me/Kristinapoly"
               className="footer__contact_link"
             >
-              <img src="/img/tg.svg" alt="" />
+              <img src="/img/telegram.svg" alt="" />
             </a>
           </nav>
           <div className="footer__adress">
@@ -56,7 +56,11 @@ function Footer() {
           </ul>
         </nav>
       </div>
-      <a href="uvarov-developer.ru" target="_blank" className="footer__created">
+      <a
+        href="http://uvarov-developer.ru/"
+        target="_blank"
+        className="footer__created"
+      >
         <h5>
           Web site created by <br />
           <span>Alexander Uvarov</span>

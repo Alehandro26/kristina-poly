@@ -149,11 +149,15 @@ function Header() {
             />
           </a>
           <a
-            href="https://t.me/@Kristinapoly"
+            href="https://t.me/Kristinapoly"
             className="header__contact-link"
             onClick={buttonBurgerExit}
           >
-            <img src="/img/tg.svg" alt="" className="header__contact-image" />
+            <img
+              src="/img/telegram.svg"
+              alt=""
+              className="header__contact-image"
+            />
           </a>
         </div>
       </nav>
